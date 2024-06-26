@@ -57,16 +57,29 @@ class _ShopPageState extends State<ShopPage> {
                             color: Color.fromARGB(140, 189, 220, 222),
                             borderRadius: BorderRadius.circular(50)),
                         child: TextButton(
-                          onPressed: () {
-                            showDialog(
-                                context: context,
-                                builder: (BuildContext context) {
-                                  return Expanded(
-                                      child: AlertDialog(
-                                    title: Text('This function is Not working'),
-                                  ));
-                                });
-                          },
+                          onPressed: () => showDialog<String>(
+                            context: context,
+                            builder: (BuildContext context) => Dialog(
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    const Text(
+                                        'This function is not available.'),
+                                    const SizedBox(height: 15),
+                                    TextButton(
+                                      onPressed: () {
+                                        Navigator.pop(context);
+                                      },
+                                      child: const Text('Close'),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
                           child: Image.asset(imagepath!),
                         ),
                       ),
