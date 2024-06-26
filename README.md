@@ -1,16 +1,42 @@
 # ridobiko
 
-A new Flutter project.
+A new Flutter project made for an internship assignment.
+<div align="center">
+<img src="asset/logo.png" alt="Screenshot Step 1" height="100">
+</div>
 
-## Getting Started
+## App Download
+Download the [APK file](app-release.apk) for Android.
 
-This project is a starting point for a Flutter application.
+## Video 
+[Link](https://drive.google.com/file/d/1Flcv7AhQdaDJmu6jez9hOI2Nooo35rJT/view?usp=drivesdk)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Screenshots
+<div align="center" display="flex">
+ <img src="Screenshot/step1.jpeg" alt="Screenshot Step 1" height="400">
+  task 
+<img src="Screenshot/step2.jpeg" alt="Screenshot Step 2" height="400">
+output  
+</div>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Installation
+
+To install this project, follow these steps:
+1. Clone the repository.
+   ```sh
+   https://github.com/a19hu/Ridobiko.git
+
+2. Navigate to the project directory.
+   ```sh
+   cd Ridobiko
+
+3. Install the dependencies.
+   ```sh
+    flutter pub get
+
+4. Run app.
+   ```sh
+   flutter run
+
